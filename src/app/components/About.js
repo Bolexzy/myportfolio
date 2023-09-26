@@ -7,7 +7,7 @@ const About = () => {
       className="flex flex-col justify-between  w-full tracking-wide leading-relaxed"
       id="about"
     >
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center " data-aos="fade-up">
         <h2 className="text-4xl font-bold tracking-widest">ABOUT ME</h2>
         <svg height="50" width="50" className="-mt-9">
           <g fill="none" stroke="black" stroke-width="6">
@@ -22,7 +22,10 @@ const About = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row justify-between mt-24 gap-x-16">
-        <div className=" max-w-none lg:max-w-4xl flex flex-col justify-between text-left mb-12">
+        <div
+          className=" max-w-none lg:max-w-4xl flex flex-col justify-between text-left mb-12"
+          data-aos="fade-right"
+        >
           <h3 className="text-3xl font-bold tracking-widest">
             Get to Know me!
           </h3>
@@ -52,7 +55,7 @@ const About = () => {
             </button>
           </a>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col" data-aos="fade-left">
           <h3 className="text-3xl font-bold tracking-wides mb-12">My Skills</h3>
           <ul
             class={`${styles.skills_btn} flex flex-wrap cursor-default text-xl `}

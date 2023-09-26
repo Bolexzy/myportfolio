@@ -2,11 +2,13 @@ import React from "react";
 import Image from "next/image";
 import projects from "../data";
 
+
 const Projects = () => {
   const projectElements = projects.map((project, index) => (
     <div
       key={index}
       className="flex flex-col lg:flex-row justify-center gap-x-32 gap-y-16 items-center p-16"
+      data-aos="fade-up"
     >
       <div className=" max-w-none lg:max-w-4xl">
         <Image alt="project" src={`/${project.img}`} width={300} height={300} />
@@ -35,7 +37,7 @@ const Projects = () => {
       className="flex flex-col justify-between w-full tracking-wide leading-relaxed mt-32"
       id="projects"
     >
-      <div className="flex flex-col items-center ">
+      <div className="flex flex-col items-center " data-aos="fade-up">
         <h2 className="text-4xl font-bold tracking-widest">PROJECTS</h2>
         <svg height="50" width="50" className="-mt-9">
           <g fill="none" stroke="black" stroke-width="6">

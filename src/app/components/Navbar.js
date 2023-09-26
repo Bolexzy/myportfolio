@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex items-center flex-no-shrink  mr-6 lg:ml-12">
           <a
             className="no-underline hover:text-gray-400 hover:no-underline"
-            href="#"
+            href="/#"
           >
             <span className="text-2xl md:text-4xl pl-2 font-semibold tracking-widest">
               Boluwatife Emmanuel

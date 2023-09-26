@@ -6,12 +6,12 @@ const Hero = () => {
   return (
     <div className="w-full bg-[#E7D2B1]  p-12  flex flex-col lg:flex-row justify-between lg:justify-around items-center tracking-widest leading-loose text-3xl lg:p-24">
       <div className="flex flex-col lg:self-end order-last lg:order-first lg:max-w-3xl text-left w-full mt-5">
-        <span className="max-w-xl font-semibold text-5xl">
+        <span className="max-w-xl font-semibold text-5xl" data-aos="fade-up">
           <h2 className="mt-5">Software Developer,</h2>
           <h2 className="mt-5">Frontend Developer,</h2>
           <h2 className="mt-5">and Technical Writer</h2>
         </span>
-        <span className="text-xl mt-12">
+        <span className="text-xl mt-12" data-aos="fade-up">
           <p>
             A passionate and experienced software developer specializing in
             building high-quality web and mobile applications. With a strong
@@ -21,7 +21,7 @@ const Hero = () => {
             looking for new things to learn.
           </p>
         </span>
-        <span className="mt-12 text-2xl">
+        <span className="mt-12 text-2xl" data-aos="fade-right">
           <a
             className="inline-block text-white bg-[#050708] rounded-lg
           focus-outline-none focus:ring-2 focus:ring-[#050708]/50
@@ -44,7 +44,10 @@ const Hero = () => {
           </a>
         </span>
       </div>
-      <div className=" h-[auto] max-h-[300px] flex justify-center">
+      <div
+        className=" h-[auto] max-h-[300px] flex justify-center"
+        data-aos="fade-left"
+      >
         <Image
           width={300}
           height={200}
