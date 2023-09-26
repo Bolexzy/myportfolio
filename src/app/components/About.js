@@ -41,7 +41,7 @@ const About = () => {
             advancements in the tech industry.
           </p>
 
-          <a className="mt-12 text-2xl" href="#contact" target="_blank">
+          <a className="mt-12 text-2xl" href="/#contact">
             <button
               className=" inline-block text-black bg-white rounded-lg
           focus-outline-none focus:ring-2 focus:ring-[#050708]/50

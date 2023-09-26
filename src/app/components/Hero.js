@@ -27,8 +27,7 @@ const Hero = () => {
           focus-outline-none focus:ring-2 focus:ring-[#050708]/50
           hover:text-gray-50 -translate-y-1 active:translate-y-0
           hover:border-blue-500 border hover:border-gray-50 shadow py-2 px-4 mr-3"
-            href="#projects"
-            target="_blank"
+            href="/#projects"
           >
             Projects
           </a>
