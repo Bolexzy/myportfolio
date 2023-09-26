@@ -35,7 +35,12 @@ const page = ({ params }) => {
       <article>
         <div className="flex flex-col justify-center gap-16 items-center p-16">
           <div className=" max-w-none lg:max-w-4xl mb-12">
-            <Image src={`/${project.img}`} width={300} height={300} />
+            <Image
+              src={`/${project.img}`}
+              width={300}
+              height={300}
+              alt="project"
+            />
           </div>
           <div className="w-full lg:max-w-7xl">
             <h3 className="text-3xl font-bold tracking-widest capitalize mb-8">
