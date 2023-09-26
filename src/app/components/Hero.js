@@ -51,6 +51,7 @@ const Hero = () => {
           height={200}
           src={"/boluwatife.png"}
           className={styles.hero_img}
+          alt="profilepic"
         />
       </div>
     </div>

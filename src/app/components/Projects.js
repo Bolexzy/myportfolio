@@ -3,10 +3,13 @@ import Image from "next/image";
 import projects from "../data";
 
 const Projects = () => {
-  const projectElements = projects.map((project) => (
-    <div className="flex flex-col lg:flex-row justify-center gap-32 items-center p-16">
+  const projectElements = projects.map((project, index) => (
+    <div
+      key={index}
+      className="flex flex-col lg:flex-row justify-center gap-32 items-center p-16"
+    >
       <div className=" max-w-none lg:max-w-4xl mb-12">
-        <Image src={`/${project.img}`} width={200} height={200} />
+        <Image alt="project" src={`/${project.img}`} width={200} height={200} />
       </div>
       <div>
         <h3 className="text-3xl font-bold tracking-widest">{project.title}</h3>
