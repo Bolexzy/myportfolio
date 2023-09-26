@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import { useEffect } from "react";
 import projects from "../../data";
 import Image from "next/image";
 import styles from "../../components/About.module.css";
@@ -7,7 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const page = ({ params }) => {
-  React.useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 800,
       once: false,
