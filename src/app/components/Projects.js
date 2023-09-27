@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import projects from "../data";
 
-
 const Projects = () => {
   const projectElements = projects.map((project, index) => (
     <div
@@ -11,11 +10,11 @@ const Projects = () => {
       data-aos="fade-up"
     >
       <div className=" max-w-none lg:max-w-4xl">
-        <Image alt="project" src={`/${project.img}`} width={300} height={300} />
+        <Image alt="project" src={`/${project.img}`} width={350} height={350} />
       </div>
-      <div>
+      <div className="w-full max-w-xl">
         <h3 className="text-3xl font-bold tracking-widest">{project.title}</h3>
-        <p className="text-2xl font-medium mt-5 text-slate-400 mb-5">
+        <p className="text-2xl font-medium mt-5 text-slate-400 mb-5 ">
           {project.description}
         </p>
         <a href={`/project/${project.id}`} className="mt-12 text-2xl">

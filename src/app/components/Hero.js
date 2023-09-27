@@ -11,7 +11,7 @@ const Hero = () => {
           <h2 className="mt-5">Frontend Developer,</h2>
           <h2 className="mt-5">and Technical Writer</h2>
         </span>
-        <span className="text-xl mt-12" data-aos="fade-up">
+        <span className="text-xl mt-12 text-gray-600" data-aos="fade-up">
           <p>
             A passionate and experienced software developer specializing in
             building high-quality web and mobile applications. With a strong

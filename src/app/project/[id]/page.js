@@ -4,19 +4,18 @@ import styles from "../../components/About.module.css";
 
 const page = ({ params }) => {
   const id = params.id;
-  const project = projects.find((project) => {
-    return project.id === id ? project : "not found";
-  });
+
+  const project = projects.find((project) => project.id.toString() === id);
 
   return (
     <section>
       <div className="w-full bg-[#E7D2B1]  p-12  flex flex-col lg:flex-row justify-between lg:justify-around items-center tracking-widest leading-loose text-3xl lg:p-24">
         <div className="flex flex-col lg:self-end order-last lg:order-first lg:max-w-3xl text-center w-full mt-5">
           <span className="font-semibold text-5xl" data-aos="fade-right">
-            <h2 className="mt-5">{project.title}</h2>
+            <h2 className="mt-5">{project?.title}</h2>
           </span>
           <span className="text-xl text-gray-600 mt-12" data-aos="fade-left">
-            <p>{project.description}</p>
+            <p>{project?.description}</p>
           </span>
           <a
             href={`${project.liveLink}`}
@@ -36,12 +35,13 @@ const page = ({ params }) => {
       </div>
       <article>
         <div className="flex flex-col justify-center gap-16 items-center p-16">
-          <div className=" max-w-none lg:max-w-4xl mb-12" data-aos="fade-up">
+          <div className=" max-w-none lg:w-3/5 mb-12" data-aos="fade-up">
             <Image
-              src={`/${project.img}`}
+              src={`/${project?.img}`}
               width={300}
               height={300}
               alt="project"
+              className="lg:w-[100%] lg:h-[auto] "
             />
           </div>
           <div className="w-full lg:max-w-7xl" data-aos="fade-up">
@@ -60,7 +60,7 @@ const page = ({ params }) => {
             <ul
               className={`${styles.skills_btn} flex flex-wrap cursor-default text-xl lg:max-w-7xl `}
             >
-              {project.tools.map((tool, index) => {
+              {project.tools?.map((tool, index) => {
                 return <li key={index}>{tool}</li>;
               })}
             </ul>
@@ -70,7 +70,11 @@ const page = ({ params }) => {
               See Live
             </h3>
             <div className="flex gap-8">
-              <a href={`${project.liveLink}`} className="mt-12 text-2xl">
+              <a
+                href={`${project?.liveLink}`}
+                target="_blank"
+                className="mt-12 text-2xl"
+              >
                 <button
                   className=" inline-block text-black bg-white rounded-lg
     focus-outline-none focus:ring-2 focus:ring-[#050708]/50
@@ -80,7 +84,11 @@ const page = ({ params }) => {
                   Live Link
                 </button>
               </a>
-              <a href={`${project.codeLink}`} className="mt-12 text-2xl">
+              <a
+                href={`${project?.codeLink}`}
+                className="mt-12 text-2xl"
+                target="_blank"
+              >
                 <button
                   className=" inline-block text-white bg-gray-700 rounded-lg
     focus-outline-none focus:ring-2 focus:ring-[#050708]/50
