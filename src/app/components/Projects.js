@@ -33,7 +33,7 @@ const Projects = () => {
 
   return (
     <div
-      className="flex flex-col justify-between w-full tracking-wide leading-relaxed mt-32"
+      className="flex flex-col justify-between w-full tracking-wide leading-relaxed mt-32 mb-32"
       id="projects"
     >
       <div className="flex flex-col items-center " data-aos="fade-up">
