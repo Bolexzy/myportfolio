@@ -95,6 +95,17 @@ export const projects = [
     tools: ["HTML", "CSS", "JS", "GIT"],
     codeLink: "https://github.com/Bolexzy/rock-paper-scissors-game",
   },
+  {
+    id: 6,
+    title: "Renewable Energy World",
+    img: "energyrenewableworld.png",
+    description: "Renewable Energy World: Energizing the world, naturally.",
+    details:
+      "This 'Renewable Energy World' website is a project completed at Qwasar, to showcase my love for green energy and my skills in search engine optimization and WordPress development. Also with the goal of educating and raising awareness about the benefits of renewable energy sources. The site is not a real business and is not intended to be sold. The contents of the site are for informational purposes only and are not meant to serve as an endorsement of any particular renewable energy technology or company",
+    liveLink: "https://energyrenewableworld.home.blog",
+    tools: ["WordPress", "HTML", "CSS", "JS"],
+    codeLink: "",
+  },
 ];
 
 export default projects;

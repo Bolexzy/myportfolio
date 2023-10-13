@@ -7,7 +7,7 @@ const Projects = () => {
     <div
       key={index}
       className="flex flex-col lg:flex-row justify-center gap-x-32 gap-y-16 items-center p-16"
-      data-aos="fade-up"
+      data-aos={`${index === projects.length - 1 ? "" : "fade-up"}`}
     >
       <div className=" max-w-none lg:max-w-4xl">
         <Image alt="project" src={`/${project.img}`} width={350} height={350} />
